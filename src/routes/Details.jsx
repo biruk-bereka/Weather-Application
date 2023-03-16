@@ -11,7 +11,9 @@ const Details = () => {
   const { detailsData } = useSelector((store) => store.details);
 
   useEffect(() => {
-    dispatch(fetchDetailsWeather(id));
+    if (detailsData.length === 0) {
+      dispatch(fetchDetailsWeather(id));
+    }
   }, []);
   return (
     <div className="container">
