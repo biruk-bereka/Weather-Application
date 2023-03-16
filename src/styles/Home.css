@@ -1,6 +1,7 @@
 
 .category-container {
   background-color: #de4984;
+  height: 100vh;
 }
 
 .header {
@@ -58,4 +59,8 @@ ul li {
 li:nth-child(4n-2),
 li:nth-child(4n-1) {
   background-color: #cd4076;
+}
+
+.message {
+  text-align: center;
 }

@@ -26,16 +26,19 @@ const weatherSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchWeatherData.pending, () => (
-        console.log('Pending')
-      ))
+      .addCase(fetchWeatherData.pending, (state) => ({
+        ...state,
+        isLoading: true,
+      }))
       .addCase(fetchWeatherData.fulfilled, (state, action) => ({
         ...state,
+        isLoading: false,
         weatherData: action.payload.list,
       }))
-      .addCase(fetchWeatherData.rejected, () => (
-        console.log('rejected')
-      ));
+      .addCase(fetchWeatherData.rejected, (state) => ({
+        ...state,
+        isLoading: false,
+      }));
   },
 
 });
