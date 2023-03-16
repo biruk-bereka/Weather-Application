@@ -11,7 +11,9 @@ const Home = () => {
   const [filteredData, setFilteredData] = useState(weatherData);
 
   useEffect(() => {
-    dispatch(fetchWeatherData());
+    if (weatherData.length === 0) {
+      dispatch(fetchWeatherData());
+    }
   }, []);
 
   useEffect(() => {
