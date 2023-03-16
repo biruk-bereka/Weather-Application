@@ -13,6 +13,7 @@ const store = configureStore({
     details: detailsReducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+
 });
 
 export default store;
