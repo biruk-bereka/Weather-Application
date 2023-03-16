@@ -208,9 +208,8 @@ If you like this project give a star!!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+I would like to thank Nelson Sakwa for the Original design idea [on Behance](https://www.behance.net/sakwadesignstudio).
 
-I would like to thank my partners. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
